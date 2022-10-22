@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Hello World</h1>
+        <h3><a href="https://developers.rsk.co/kb/first-frontend-web3-injected/">How to create your first frontend for
+                smart contracts</a></h3>
+        <div class="row">
+            <h3 class="sub-header">Set information</h3>
+            <form class="form-inline" role="form">
+                <div class="form-group">
+                    <table>
+                        <tr>
+                            <td><label for="newInfo">Info:</label> </td>
+                            <td>
+                                <input class="form-control" id="newInfo">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <a href="#" onclick="App.registerSetInfo()" class="btn btn-primary">Set</a>
+            </form>
+        </div>
+        <div class="row">
+            <h3 class="sub-header">Get last information saved</h3>
+            <form class="form-inline" role="form">
+                <a href="#" onclick="App.registerGetInfo()" class="btn btn-primary">Get</a>
+                <div class="form-group">
+                    <table>
+                        <tr>
+                            <td>Info:</td>
+                            <td>
+                                <label id="lastInfo">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- <script src="js/jquery.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--錯誤！<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+    <!-- 錯誤！利用npm install web3安裝，如下無法執行 -->
+    <!-- <script type="text/javascript" src="node_modules/web3/dist/web3.min.js"></script> -->
+    <script src="app5.js"></script>
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>     -->
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <!-- <script src="js/web3.min.js"></script> -->
+</body>
+
+</html>
