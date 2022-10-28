@@ -16,8 +16,8 @@
         <input type="text" id="amount" placeholder="e.g. 95" />
         <p>
             <label for="receiver">To address: </label>
-        <input type="text" id="receiver" placeholder="e.g 0x93e66..." />
-        </p>        
+            <input type="text" id="receiver" placeholder="e.g 0x93e66..." />
+        </p>
         <p>
             <button onclick="App.sendCoin()">轉移代幣</button>&nbsp;&nbsp;
             <label id="info" style="color:red"></label>
@@ -29,26 +29,11 @@
         </p>
     </div>
 
-    <ol>
-        <li>本範例是系統中帳戶數組 mapping (address => uint) balances 之間的金額移轉</li>
-        <li>部署合約時初始帳戶擁有100000<br/>
-        <pre>
-  《2_deploy_contracts.js》
-  var MyToken = artifacts.require("MyToken");
-  module.exports = function(deployer) {
-    // 把值100000初始化進去合約裡面
-    deployer.deploy(MyToken, 100000);
-};
-        </pre>
-        </li>                
-        <li>Amount輸入15，To address輸入帳號B，按下Send MetaCoin</li>
-        <li>查詢餘額：balances[tx.origin] = 9985，balances[帳號B] = 15</li>
-    </ol>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
     <!-- <script type="text/javascript" src="node_modules/web3/dist/web3.min.js"></script> -->
-    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+    <script src="index_2.js"></script>
 </body>
 
 </html>
